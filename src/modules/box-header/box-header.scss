@@ -1,0 +1,39 @@
+@import '../../scss/mixins';
+
+.box-header {
+  @include container-styles;
+  padding-top: 150px;
+  padding-bottom: 75px;
+  text-align: center;
+  & h2 {
+    color: #202020;
+    margin: 0;
+    font-size: 46px;
+    line-height: 1.23;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-bottom: 3px;
+  }
+  & p {
+    color: #707070;
+    font-size: 22px;
+    margin: 0;
+    padding: 41px 0 0 0;
+    line-height: 1.5;
+    font-weight: 400;
+    & a {
+      color: rgb(17, 84, 217) !important;
+      text-decoration: none;
+      border-bottom: 1px solid rgb(17, 84, 217);
+    }
+  }
+  &--inverted {
+    & h2 {
+      color: #ffffff;
+    }
+    & p {
+      color: #ffffff;
+      opacity: 0.70;
+    }
+  }
+}

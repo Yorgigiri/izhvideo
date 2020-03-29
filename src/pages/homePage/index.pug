@@ -1,0 +1,45 @@
+extends ../layout.pug
+include ../../modules/main-menu/main-menu
+include ../../modules/projects-list/projects-list
+include ../../modules/services-list/services-list
+include ../../modules/working-list/working-list
+include ../../modules/behind-scenes/behind-scenes
+include ../../modules/blog-list/blog-list
+include ../../modules/make-good-video/make-good-video
+include ../../modules/calculating-form/calculating-form
+include ../../modules/common/footer/footer
+
+
+block page
+    .art-board
+        .art-board-header
+            .art-board-header__inner
+                a(href="#").art-board-header__logo
+                    img(src="./../../assets/logo.png")
+                +main-menu()
+        .art-board__wrapper
+            h1.art-board__title Производство видео для бизнеса
+            .art-board-bottom
+                a(href="#").art-board__button Заказать видео
+                .art-board__info
+                    | Мы производим презентационные, имиджевые и анимационные видеоролики, для бизнеса.
+        a(href="#").art-board__arrow
+            img(src="./../../assets/arrow_white.gif")
+    +projects-list
+    +services-list
+    +working-list(
+        'Наши принципы',
+        'Решение задач через историю, способную удержать внимание аудитории. Актеры, интересные ракурсы, постановка света, камера, монтаж и звук это элементы дополнения качественного видеоролика.',
+        true
+    )
+    +working-list(
+        'Как мы производим видео',
+        'Наше преимущество это работа команды и разделение труда по специалистам. Это позволяет сдавать качественный продукт в срок.',
+        false
+    )
+    +calculating-form
+    +behind-scenes
+    +blog-list
+    +make-good-video
+    +footer
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")

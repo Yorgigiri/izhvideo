@@ -1,0 +1,25 @@
+.service-card {
+  width: 50%;
+  padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 90px;
+  &__icon {
+    width: 70px;
+    min-width: 70px;
+    margin-right: 20px;
+  }
+  &__title {
+    color: #202020;
+    font-size: 22px;
+    line-height: 1.35;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  &__description {
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+}

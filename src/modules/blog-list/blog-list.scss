@@ -1,0 +1,12 @@
+@import '../../scss/mixins';
+
+.blog-list {
+  background-color: #f5f5f5;
+  padding-bottom: 150px;
+  &__inner {
+    @include container-styles;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}

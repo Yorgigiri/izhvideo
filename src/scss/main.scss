@@ -1,0 +1,47 @@
+@import './../../node_modules/normalize.css';
+
+// common
+@import "../modules/main-menu/main-menu";
+@import "../modules/box-header/box-header";
+
+// services
+@import "../modules/services-list/services-list";
+@import "../modules/service-card/service-card";
+
+// projects
+@import "../modules/projects-list/projects-list";
+@import "../modules/project-card/project-card";
+
+// working-list
+@import "../modules/working-list/working-list";
+@import "../modules/working-card/working-card";
+
+// behind-scenes
+@import "../modules/behind-scenes/behind-scenes";
+@import "../modules/behind-scenes-card/behind-scenes-card";
+
+// blog-list
+@import "../modules/blog-list/blog-list";
+@import "../modules/blog-list-card/blog-list-card";
+
+// make-good-video
+@import "../modules/make-good-video/make-good-video";
+
+// common
+@import "../modules/common/social-links/social-links";
+@import "../modules/common/footer/footer";
+
+// box-button
+@import "../modules/box-button/box-button";
+
+@import "../modules/calculating-form/calculating-form";
+
+@import "../pages/homePage/homePage";
+
+body {
+  font-family: 'Geometria', Arial, sans-serif;
+  & * {
+    box-sizing: border-box;
+  }
+}
+

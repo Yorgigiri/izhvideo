@@ -1,0 +1,18 @@
+include ../../modules/behind-scenes-card/behind-scenes-card
+include ../../modules/box-header/box-header
+
+mixin behind-scenes()
+    .behind-scenes
+        +box-header(
+            'За кадром',
+            'Еще больше фотографий со съемок смотрите в нашем <a href="https://www.instagram.com/">Instagram</a>'
+        )
+        .behind-scenes__inner
+            +behind-scenes-card()
+            +behind-scenes-card()
+            +behind-scenes-card()
+            +behind-scenes-card()
+            +behind-scenes-card()
+            +behind-scenes-card()
+            +behind-scenes-card()
+            +behind-scenes-card()

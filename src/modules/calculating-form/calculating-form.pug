@@ -1,0 +1,23 @@
+include ../../modules/box-header/box-header
+
+mixin calculating-form()
+    .calculating-form__container
+        +box-header(
+            'Расчитать стоимость',
+            'Оставьте e-mail и телефон. Мы свяжемся с вами что бы уточнить детали заявки, и затем рассчитаем ориентировочную стоимость вашего проекта.',
+            true
+        )
+        form.calculating-form
+            .calculating-form__inner
+                .calculating-form__column
+                    input(type="email" placeholder="Ваш e-mail").calculating-form__input
+                .calculating-form__column
+                    input(type="text" placeholder="Имя").calculating-form__input
+                .calculating-form__column
+                    input(type="tel" pattern="[0-9]*" placeholder="Телефон").calculating-form__input
+                .calculating-form__column
+                    input(type="submit").calculating-form__submit
+            .calculating-form-errors
+                .calculating-form-errors__text Пожалуйста, заполните все обязательные поля
+            .calculating-form__politics
+                | Нажимая «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a>

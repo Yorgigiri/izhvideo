@@ -1,0 +1,13 @@
+.make-good-video {
+  padding-bottom: 150px;
+  background-image: -webkit-linear-gradient(top, rgba(17,84,217,1), rgba(17,84,217,1));
+  & .box-header {
+    & h2 {
+      color: #ffffff;
+    }
+    & p {
+      color: #ffffff;
+      opacity: 0.70;
+    }
+  }
+}

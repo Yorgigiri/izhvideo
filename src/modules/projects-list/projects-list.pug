@@ -1,0 +1,20 @@
+include ../project-card/project-card
+include ../../modules/box-header/box-header
+include ../../modules/box-button/box-button
+
+mixin projects-list()
+    .projects-list
+        +box-header(
+            'Наши работы',
+            'Мы сделали наше хобби любимой работой. Решаем проблемы и задачи бизнеса'
+        )
+        .projects-list__inner
+            +project-card
+            +project-card
+            +project-card
+            +project-card
+            +project-card
+            +project-card
+            +project-card
+            +project-card
+        +box-button('Все работы', 'dark')

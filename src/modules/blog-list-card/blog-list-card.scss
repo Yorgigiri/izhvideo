@@ -1,0 +1,26 @@
+.blog-list-card {
+  padding: 0 20px;
+  margin-bottom: 40px;
+  &__preview {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  &__info {
+    background: #fff;
+    padding: 20px 30px 25px;
+    &-title {
+      color: #202020;
+      font-size: 24px;
+      line-height: 1.23;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    &-description {
+      color: #707070;
+      font-size: 16px;
+      line-height: 1.55;
+      font-weight: 400;
+    }
+  }
+}

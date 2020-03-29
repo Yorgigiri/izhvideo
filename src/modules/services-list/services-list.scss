@@ -1,0 +1,10 @@
+@import '../../scss/mixins';
+
+.services-list {
+  &__inner {
+    @include container-styles;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 920px;
+  }
+}

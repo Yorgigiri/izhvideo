@@ -1,0 +1,10 @@
+.social-links {
+  display: flex;
+  margin-bottom: 50px;
+  &__element {
+    margin-right: 7px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

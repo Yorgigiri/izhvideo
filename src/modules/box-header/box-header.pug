@@ -1,0 +1,11 @@
+mixin box-header(title, description, inverted)
+    if inverted
+        .box-header.box-header--inverted
+            h2= title
+            p
+                | !{description}
+    else
+        .box-header
+            h2= title
+            p
+                | !{description}

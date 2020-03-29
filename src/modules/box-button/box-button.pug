@@ -1,0 +1,6 @@
+mixin box-button(buttonText, buttonStyle)
+    - var attributes = {};
+    - attributes.class = 'box-button--' + buttonStyle;
+
+    .box-button&attributes(attributes)
+        a(href="#").box-button__button= buttonText

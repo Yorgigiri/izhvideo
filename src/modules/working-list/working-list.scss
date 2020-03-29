@@ -1,0 +1,10 @@
+@import '../../scss/mixins';
+
+.working-list {
+  padding-bottom: 150px;
+  &__inner {
+    @include container-styles;
+    display: flex;
+    justify-content: center;
+  }
+}

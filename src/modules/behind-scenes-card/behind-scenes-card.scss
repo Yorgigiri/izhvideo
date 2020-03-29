@@ -1,0 +1,29 @@
+.behind-scenes-card {
+  width: 25%;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &:hover & {
+    &__preview {
+      transform: scale(1.05);
+    }
+  }
+  &__preview {
+    height: 100%;
+    width: auto;
+    transition: transform ease-in-out .25s;
+    cursor: zoom-in;
+    &-container {
+      transform: translate(-50%, -50%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      min-width: 110%;
+      height: 110%;
+    }
+  }
+}

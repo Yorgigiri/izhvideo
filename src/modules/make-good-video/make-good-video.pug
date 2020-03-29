@@ -1,0 +1,10 @@
+include ../../modules/box-header/box-header
+include ../../modules/box-button/box-button
+
+mixin make-good-video()
+    .make-good-video
+        +box-header(
+            'Сделаем красивое видео вместе',
+            'Заполните небольшую заявку, и мы проведем консультацию, напишем три концепции сценария и посчитаем стоимость вашего видеоролика'
+        )
+        +box-button('Заполнить заявку', 'light')

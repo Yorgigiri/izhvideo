@@ -1,0 +1,14 @@
+@mixin container-styles {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin button-style {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
