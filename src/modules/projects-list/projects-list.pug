@@ -2,11 +2,11 @@ include ../project-card/project-card
 include ../../modules/box-header/box-header
 include ../../modules/box-button/box-button
 
-mixin projects-list()
+mixin projects-list(title, description, isNotPortfolio)
     .projects-list
         +box-header(
-            'Наши работы',
-            'Мы сделали наше хобби любимой работой. Решаем проблемы и задачи бизнеса'
+            title,
+            description
         )
         .projects-list__inner
             +project-card
@@ -17,4 +17,5 @@ mixin projects-list()
             +project-card
             +project-card
             +project-card
-        +box-button('Все работы', 'dark')
+        if isNotPortfolio
+            +box-button('Все работы', 'dark')

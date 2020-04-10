@@ -1,0 +1,125 @@
+.page-inner {
+  color: #202020;
+  font-weight: 400;
+  &-navigation {
+    display: flex;
+    padding-top: 180px;
+    &__link {
+      width: 50%;
+      padding: 40px;
+      color: #202020;
+      font-size: 22px;
+      line-height: 1.35;
+      font-weight: 500;
+      text-decoration: none;
+      & span {
+        display: block;
+        color: #707070;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        font-size: 12px;
+        letter-spacing: 2.5px;
+      }
+    }
+    &__back {
+
+    }
+    &__next {
+      color: #ffffff;
+      background: #202020;
+      text-align: right;
+      transition: opacity ease-in-out 0.3s;
+      &:hover {
+        opacity: .9;
+      }
+      & span {
+        color: #ffffff;
+      }
+    }
+  }
+  &__topic {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #707070;
+    position: relative;
+    opacity: .7;
+    &:after {
+      display: block;
+      content: "";
+      width: 100%;
+      background: #000000;
+      max-width: 560px;
+      height: 1px;
+      margin: 45px auto 65px;
+      opacity: .7;
+    }
+  }
+  &__extra-info {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.55;
+    position: relative;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      background: #000000;
+      max-width: 560px;
+      height: 1px;
+      margin: 45px auto 65px;
+      opacity: .7;
+    }
+  }
+  &__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 150px;
+    & h2 {
+      font-size: 32px;
+      text-align: left;
+      max-width: 760px;
+      margin: 0 auto 45px;
+    }
+    & b, strong {
+      font-weight: 700;
+    }
+    & ul {
+      max-width: 760px;
+      margin: 0 auto 10px;
+      font-size: 20px;
+      line-height: 1.55;
+      padding-left: 20px;
+      & li {
+
+      }
+    }
+    & p {
+      font-size: 20px;
+      line-height: 1.55;
+      text-align: left;
+      max-width: 760px;
+      margin: 0 auto 45px;
+    }
+    & blockquote {
+      max-width: 880px;
+      margin: 0 auto 45px;
+      padding: 60px;
+      background: #1154d9;
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+      & p {
+        max-width: initial;
+        text-align: center;
+        margin: 0;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 50px;
+        font-weight: 500;
+      }
+    }
+  }
+}

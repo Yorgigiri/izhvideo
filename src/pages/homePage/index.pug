@@ -25,7 +25,11 @@ block page
                     | Мы производим презентационные, имиджевые и анимационные видеоролики, для бизнеса.
         a(href="#").art-board__arrow
             img(src="./../../assets/arrow_white.gif")
-    +projects-list
+    +projects-list(
+        'Наши работы',
+        'Мы сделали наше хобби любимой работой. Решаем проблемы и задачи бизнеса',
+        true
+    )
     +services-list
     +working-list(
         'Наши принципы',
@@ -40,6 +44,9 @@ block page
     +calculating-form
     +behind-scenes
     +blog-list
-    +make-good-video
+    +make-good-video(
+        'Сделаем красивое видео вместе',
+        'Заполните небольшую заявку, и мы проведем консультацию, напишем три концепции сценария и посчитаем стоимость вашего видеоролика'
+    )
     +footer
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")
+    //link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")

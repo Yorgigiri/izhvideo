@@ -8,6 +8,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/pages/homePage/index.pug --open",
+    "start_portfolio": "parcel src/pages/portfolioPage/index.pug --open",
+    "start_bloglist": "parcel src/pages/blogListPage/index.pug --open",
+    "start_blogpage": "parcel src/pages/blogPage/index.pug --open",
+    "start_projectpage": "parcel src/pages/projectPage/index.pug --open",
     "build": "parcel build src/pages/homePage/index.pug -d docs --public-url ./"
   },
   "devDependencies": {

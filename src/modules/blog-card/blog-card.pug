@@ -1,0 +1,6 @@
+mixin blog-card(title, description, image)
+    a(href="#").blog-card
+        .blog-card__info
+            .blog-card__info-title= title
+            .blog-card__info-description= description
+        img(src=image).blog-card__image

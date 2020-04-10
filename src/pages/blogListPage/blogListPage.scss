@@ -1,0 +1,19 @@
+@import '../../scss/mixins';
+
+
+.blog-list {
+
+  &__inner {
+    @include container-styles;
+    max-width: 1160px;
+    flex-direction: column;
+  }
+  &--main-list {
+    background-color: #1154D9;
+  }
+  &--main-list & {
+    &__inner {
+      background: #ffffff;
+    }
+  }
+}

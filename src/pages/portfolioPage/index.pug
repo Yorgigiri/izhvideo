@@ -1,0 +1,53 @@
+extends ../layout.pug
+include ../../modules/main-menu/main-menu
+include ../../modules/projects-list/projects-list
+include ../../modules/box-button/box-button
+include ../../modules/make-good-video/make-good-video
+include ../../modules/common/footer/footer
+
+block page
+    .art-board.art-board--inner-page
+        .art-board-header
+            .art-board-header__inner
+                a(href="#").art-board-header__logo
+                    img(src="./../../assets/logo.png")
+                +main-menu
+        .art-board__wrapper
+            h1.art-board__title Производство видео для бизнеса
+            .art-board-bottom
+                .art-board__info
+                    | Атмосферные видеоролики для бизнеса
+        a(href="#").art-board__arrow
+            img(src="./../../assets/arrow_white.gif")
+        .art-board-links
+            a(href="#").art-board-links__link Имиджевые,
+            a(href="#").art-board-links__link рекламные,
+            a(href="#").art-board-links__link презентационные,
+            a(href="#").art-board-links__link корпоративные,
+            a(href="#").art-board-links__link анимационные
+        +box-button('Перейти на YouTube-канал →', 'light')
+    +projects-list(
+        'Имиджевые видеоролики',
+        'Продвижение бренда, повышение лояльности'
+    )
+    +projects-list(
+        'Рекламные ролики',
+        'Реклама конкретного товара или услуги'
+    )
+    +projects-list(
+        'Презентационные ролики',
+        'Презентация компании, товара или услуги'
+    )
+    +projects-list(
+        'Корпоративные фильмы',
+        'История о компании'
+    )
+    +projects-list(
+        'Анимационные ролики',
+        'Видеоролики из графических объектов'
+    )
+    +make-good-video(
+        'Хотите так же? Оставьте заявку :)',
+        'Ответьте на ключевые вопросы, и мы свяжемся, чтобы обсудить проект'
+    )
+    +footer

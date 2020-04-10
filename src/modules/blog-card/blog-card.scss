@@ -1,0 +1,22 @@
+.blog-card {
+  display: flex;
+  text-decoration: none;
+  &__info {
+    padding: 30px 40px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    &-title {
+      color: #202020;
+      font-size: 36px;
+      line-height: 1.23;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    &-description {
+      color: #707070;
+      font-size: 18px;
+      line-height: 1.55;
+      opacity: .7;
+    }
+  }
+}
