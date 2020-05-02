@@ -3,10 +3,24 @@
 .blog-list {
   background-color: #f5f5f5;
   padding-bottom: 150px;
+  @media screen and (max-width: 768px){
+    padding-bottom: 90px;
+  }
   &__inner {
     @include container-styles;
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
+      flex: none;
+      flex-wrap: nowrap;
+      justify-content: initial;
+      padding: 0;
+      margin-bottom: 0;
+    }
   }
 }

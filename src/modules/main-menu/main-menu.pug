@@ -1,13 +1,33 @@
+include ../common/social-links/social-links
+
 mixin main-menu(title, description)
     .main-menu
-        ul
-            li
-                a(href="#") Работы
-            li
-                a(href="#") Услуги
-            li
-                a(href="#") Стоимость
-            li
-                a(href="#") Контакты
-            li
-                a(href="#") Блог
+        .main-menu__burger.m--toggle-mobile-menu
+            span
+            span
+            span
+        .main-menu__opacity.m--toggle-mobile-menu
+        .main-menu__container
+            .main-menu__close.m--toggle-mobile-menu
+                span.m--toggle-mobile-menu
+                span.m--toggle-mobile-menu
+            .main-menu__logo
+                img(src="./../../assets/logo.png")
+            .main-menu__inner
+                ul
+                    li
+                        a(href="#") Работы
+                    li
+                        a(href="#" class="m--toggle-mobile-menu") Услуги
+                    li
+                        a(href="#" class="m--toggle-mobile-menu") Стоимость
+                    li
+                        a(href="#" class="m--toggle-mobile-menu") Контакты
+                    li
+                        a(href="#" class="main-menu__blog-link") Блог
+            .main-menu__info
+                | Сделаем красивое видео вместе :)
+            +social-links
+            .main-menu__info
+                | Izhvideoproduction@gmail.com<br>
+                | <a href="tel:+79199131936">+7 (919) 913-19-36</a>

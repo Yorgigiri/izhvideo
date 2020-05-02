@@ -4,6 +4,19 @@ include ../../modules/common/footer/footer
 
 block page
     .page-inner
+        .art-board.art-board--blog-page
+            .art-board-header
+                .art-board-header__inner
+                    a(href="#").art-board-header__logo
+                        img(src="./../../assets/logo.png")
+                    +main-menu
+            .art-board__wrapper
+                h1(data-aos="fade-up" data-aos-delay="600").art-board__title Нововведения 2020
+                .art-board-bottom(data-aos="fade-up" data-aos-delay="800")
+                    .art-board__info
+                        | Мы производим презентационные, имиджевые и анимационные видеоролики, для бизнеса.
+            a(href="#").art-board__arrow
+                img(src="./../../assets/arrow_white.gif")
         .video-board
             iframe(
                 id="video"
@@ -12,20 +25,9 @@ block page
                 src="https://www.youtube.com/embed/ZRPpCqXYoos?autoplay=0&enablejsapi=1"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen)
-        .art-board.art-board--blog-page
-            .art-board-header
-                .art-board-header__inner
-                    a(href="#").art-board-header__logo
-                        img(src="./../../assets/logo.png")
-                    +main-menu
-            .art-board__wrapper
-                h1.art-board__title Нововведения 2020
-                .art-board-bottom
-                    .art-board__info
-                        | Мы производим презентационные, имиджевые и анимационные видеоролики, для бизнеса.
-            a(href="#").art-board__arrow
-                img(src="./../../assets/arrow_white.gif")
+                allowfullscreen
+            )
+        .m--video-stop
         .page-inner__wrapper
             .page-inner__topic
                 | Каждый год мы анализируем свой опыт и реагируем на него использованием новых практик, правил, введением новых услуг. Прошедший год не стал исключением. Он был сложным, но мы поработали плодотворно и достойно. Наступает новый этап жизни «Облака», и можно смело сказать, что мы повзрослели, стали сильнее и от этого не менее амбициознее.
@@ -52,4 +54,3 @@ block page
                 span вперед
                 | Сколько стоит рекламный ролик?
     +footer
-    script(src='./index.js')

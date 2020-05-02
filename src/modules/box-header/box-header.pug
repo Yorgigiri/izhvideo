@@ -1,11 +1,13 @@
 mixin box-header(title, description, inverted)
     if inverted
         .box-header.box-header--inverted
-            h2= `${title}`
-            p
-                | !{description}
+            h2(data-aos="zoom-in" data-aos-delay="400")= `${title}`
+            div(data-aos="fade-up" data-aos-delay="600")
+                p
+                    | !{description}
     else
         .box-header
-            h2= `${title}`
-            p
-                | !{description}
+            h2(data-aos="zoom-in" data-aos-delay="400")= `${title}`
+            div(data-aos="fade-up" data-aos-delay="600")
+                p
+                    | !{description}

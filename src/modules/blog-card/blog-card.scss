@@ -1,22 +1,51 @@
 .blog-card {
   display: flex;
   text-decoration: none;
+  @media screen and (max-width: 580px) {
+    flex-direction: column;
+  }
   &__info {
     padding: 30px 40px;
     border-left: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    @media screen and (max-width: 768px) {
+      padding: 20px 20px 40px;
+    }
     &-title {
       color: #202020;
       font-size: 36px;
       line-height: 1.23;
       font-weight: 500;
       margin-bottom: 30px;
+      @media screen and (max-width: 1200px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 7px;
+      }
     }
     &-description {
       color: #707070;
       font-size: 18px;
       line-height: 1.55;
       opacity: .7;
+      @media screen and (max-width: 768px) {
+        line-height: 18px;
+      }
+    }
+  }
+  &__image {
+    min-width: 580px;
+    @media screen and (max-width: 1200px) {
+      min-width: 40%;
+      align-self: flex-start;
+      height: auto;
+      width: 40%;
+    }
+    @media screen and (max-width: 580px) {
+      width: 100%;
     }
   }
 }

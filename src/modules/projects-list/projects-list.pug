@@ -3,19 +3,20 @@ include ../../modules/box-header/box-header
 include ../../modules/box-button/box-button
 
 mixin projects-list(title, description, isNotPortfolio)
-    .projects-list
+    .projects-list(id!=attributes.id)
         +box-header(
             title,
             description
         )
-        .projects-list__inner
-            +project-card
-            +project-card
-            +project-card
-            +project-card
-            +project-card
-            +project-card
-            +project-card
-            +project-card
+        .swiper-container.m--projects-swipper(data-aos="fade-zoom-in" data-aos-delay="900")
+            .projects-list__inner.swiper-wrapper
+                +project-card
+                +project-card
+                +project-card
+                +project-card
+                +project-card
+                +project-card
+            div.swiper-button-next
+            div.swiper-button-prev
         if isNotPortfolio
             +box-button('Все работы', 'dark')

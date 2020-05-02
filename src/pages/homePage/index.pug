@@ -12,16 +12,18 @@ include ../../modules/common/footer/footer
 
 block page
     .art-board
+        .art-board__background(style={'background-image': 'url(./../../assets/back.jpg)'})
         .art-board-header
             .art-board-header__inner
                 a(href="#").art-board-header__logo
                     img(src="./../../assets/logo.png")
                 +main-menu()
         .art-board__wrapper
-            h1.art-board__title Производство видео для бизнеса
+            h1(data-aos="fade-up" data-aos-delay="300").art-board__title Производство видео для бизнеса
             .art-board-bottom
-                a(href="#").art-board__button Заказать видео
-                .art-board__info
+                div(data-aos="fade-up" data-aos-delay="400")
+                    a(href="#").art-board__button Заказать видео
+                .art-board__info(data-aos="fade-up" data-aos-delay="500")
                     | Мы производим презентационные, имиджевые и анимационные видеоролики, для бизнеса.
         a(href="#").art-board__arrow
             img(src="./../../assets/arrow_white.gif")
@@ -49,4 +51,3 @@ block page
         'Заполните небольшую заявку, и мы проведем консультацию, напишем три концепции сценария и посчитаем стоимость вашего видеоролика'
     )
     +footer
-    //link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")

@@ -7,16 +7,20 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  &:hover & {
-    &__preview {
-      transform: scale(1.05);
-    }
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+    height: 50vw;
+  }
+  @media screen and (max-width: 768px) {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
   }
   &__preview {
     height: 100%;
     width: auto;
-    transition: transform ease-in-out .25s;
-    cursor: zoom-in;
     &-container {
       transform: translate(-50%, -50%);
       position: absolute;

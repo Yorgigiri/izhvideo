@@ -1,9 +1,11 @@
 @import '../../../scss/mixins';
 
 .footer {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding: 150px 0;
   background-color: #202020;
+  @media screen and (max-width: 768px){
+    padding: 90px 0;
+  }
   &__inner {
     @include container-styles;
     max-width: 1060px;
@@ -12,6 +14,9 @@
     color: #ffffff;
     font-size: 22px;
     line-height: 1.55;
+    @media screen and (max-width: 768px){
+      font-size: 18px;
+    }
     &__company {
       font-weight: 500;
     }

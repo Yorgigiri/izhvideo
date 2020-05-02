@@ -1,6 +1,9 @@
 .make-good-video {
   padding-bottom: 150px;
-  background-image: -webkit-linear-gradient(top, rgba(17,84,217,1), rgba(17,84,217,1));
+  background: #00aeef;
+  @media screen and (max-width: 768px){
+    padding-bottom: 90px;
+  }
   & .box-header {
     & h2 {
       color: #ffffff;

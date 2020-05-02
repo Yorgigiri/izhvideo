@@ -1,6 +1,25 @@
 .blog-list-card {
   padding: 0 20px;
   margin-bottom: 40px;
+  max-width: 400px;
+  & a {
+    display: block;
+    height: 100%;
+    background: #fff;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: initial;
+    position: relative;
+    transition-property: transform;
+  }
   &__preview {
     width: 100%;
     display: block;

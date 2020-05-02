@@ -20,32 +20,32 @@ block page
         a(href="#").art-board__arrow
             img(src="./../../assets/arrow_white.gif")
         .art-board-links
-            a(href="#").art-board-links__link Имиджевые,
-            a(href="#").art-board-links__link рекламные,
-            a(href="#").art-board-links__link презентационные,
-            a(href="#").art-board-links__link корпоративные,
-            a(href="#").art-board-links__link анимационные
+            a(href="#block1").art-board-links__link.m--scrollable-anchor Имиджевые,
+            a(href="#block2").art-board-links__link.m--scrollable-anchor рекламные,
+            a(href="#block3").art-board-links__link.m--scrollable-anchor презентационные,
+            a(href="#block4").art-board-links__link.m--scrollable-anchor корпоративные,
+            a(href="#block5").art-board-links__link.m--scrollable-anchor анимационные
         +box-button('Перейти на YouTube-канал →', 'light')
     +projects-list(
         'Имиджевые видеоролики',
         'Продвижение бренда, повышение лояльности'
-    )
+    )(id='block1')
     +projects-list(
         'Рекламные ролики',
         'Реклама конкретного товара или услуги'
-    )
+    )(id='block2')
     +projects-list(
         'Презентационные ролики',
         'Презентация компании, товара или услуги'
-    )
+    )(id='block3')
     +projects-list(
         'Корпоративные фильмы',
         'История о компании'
-    )
+    )(id='block4')
     +projects-list(
         'Анимационные ролики',
         'Видеоролики из графических объектов'
-    )
+    )(id='block5')
     +make-good-video(
         'Хотите так же? Оставьте заявку :)',
         'Ответьте на ключевые вопросы, и мы свяжемся, чтобы обсудить проект'

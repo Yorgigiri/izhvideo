@@ -1,6 +1,10 @@
 .projects-list {
   &__inner {
     display: flex;
-    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      display: block;
+      flex: none;
+      flex-wrap: nowrap;
+    }
   }
 }

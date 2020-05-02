@@ -1,6 +1,9 @@
 @import '../../scss/mixins';
 
 .calculating-form {
+  @media screen and (max-width: 900px) {
+    padding: 0 15px;
+  }
   &-errors {
     @include container-styles;
     max-width: 960px;
@@ -9,6 +12,9 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    @media screen and (max-width: 900px) {
+      max-width: 600px;
+    }
     &__text {
       color: #ffffff;
       font-size: 20px;
@@ -18,20 +24,33 @@
   }
   &__container {
     padding-bottom: 150px;
-    background: #1154d9;
+    background: #00aeef;
+    @media screen and (max-width: 768px){
+      padding-bottom: 90px;
+    }
   }
   &__inner {
     @include container-styles;
     max-width: 960px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
+    @media screen and (max-width: 900px) {
+      max-width: 600px;
+      padding: 0;
+      flex-direction: column;
+    }
   }
   &__column {
     width: 25%;
     padding-right: 20px;
     &:last-child {
       padding-right: 0;
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 25px;
     }
   }
   &__input {
@@ -61,7 +80,7 @@
     cursor: pointer;
     color: #ffffff;
     border: 2px solid #ffffff;
-    background-color: #1154d9;
+    background-color: #00aeef;
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -70,7 +89,7 @@
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     &:hover {
       background-color: #ffffff !important;
-      color: #1154d9 !important;
+      color: #00aeef !important;
       border-color: #ffffff !important;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1) !important;
     }
@@ -81,6 +100,10 @@
     line-height: 1.55;
     text-align: center;
     color: #ffffff;
+    @media screen and (max-width: 900px) {
+      max-width: 600px;
+      margin: 30px auto 0;
+    }
     & a {
       color: #ffffff;
     }

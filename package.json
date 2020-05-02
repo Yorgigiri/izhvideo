@@ -12,7 +12,11 @@
     "start_bloglist": "parcel src/pages/blogListPage/index.pug --open",
     "start_blogpage": "parcel src/pages/blogPage/index.pug --open",
     "start_projectpage": "parcel src/pages/projectPage/index.pug --open",
-    "build": "parcel build src/pages/homePage/index.pug -d docs --public-url ./"
+    "build": "parcel build src/pages/homePage/index.pug -d docs --no-source-maps --public-url ./",
+    "build_bloglist": "parcel build src/pages/blogListPage/index.pug -d docs/blogListPage --no-source-maps --public-url ./",
+    "build_portfolio": "parcel build src/pages/portfolioPage/index.pug -d docs/portfolioPage --no-source-maps --public-url ./",
+    "build_blogpage": "parcel build src/pages/blogPage/index.pug -d docs/blogPage --no-source-maps --public-url ./",
+    "build_projectpage": "parcel build src/pages/projectPage/index.pug -d docs/projectPage --no-source-maps --public-url ./"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
@@ -20,6 +24,9 @@
     "sass": "^1.26.3"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "@fancyapps/fancybox": "^3.5.7",
+    "aos": "^2.3.4",
+    "normalize.css": "^8.0.1",
+    "swiper": "^5.3.7"
   }
 }

@@ -1,5 +1,5 @@
 mixin service-card(icon, title, description)
-    .service-card
+    .service-card(data-aos!=attributes.aos data-aos-delay!=attributes.delay)
         img(src= icon).service-card__icon
         .service-card__info
             .service-card__title= title

@@ -7,12 +7,15 @@ mixin behind-scenes()
             'За кадром',
             'Еще больше фотографий со съемок смотрите в нашем <a href="https://www.instagram.com/">Instagram</a>'
         )
-        .behind-scenes__inner
-            +behind-scenes-card()
-            +behind-scenes-card()
-            +behind-scenes-card()
-            +behind-scenes-card()
-            +behind-scenes-card()
-            +behind-scenes-card()
-            +behind-scenes-card()
-            +behind-scenes-card()
+        .swiper-container.m--default-swipper
+            .behind-scenes__inner(data-aos="fade-zoom-in" data-aos-delay="900").swiper-wrapper
+                +behind-scenes-card("../../assets/hleb.jpg")
+                +behind-scenes-card("../../assets/berezka.jpg")
+                +behind-scenes-card("../../assets/hleb.jpg")
+                +behind-scenes-card("../../assets/berezka.jpg")
+                +behind-scenes-card("../../assets/hleb.jpg")
+                +behind-scenes-card("../../assets/berezka.jpg")
+                +behind-scenes-card("../../assets/hleb.jpg")
+                +behind-scenes-card("../../assets/berezka.jpg")
+            div.swiper-button-next
+            div.swiper-button-prev
